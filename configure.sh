@@ -22,5 +22,5 @@ set_dir_from ()
 # global variable '$base'.
 set_base_from ()
 {
-  base=`echo "$1" | sed -e 's|^.*/||' -e 's/\.[^.]*$//'`
+  base=`echo "$1" | sed -e 's|^.*/||' -e 's/\.[^.]*$//' | sh`
 }
